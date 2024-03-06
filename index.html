@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items:center;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-family: monospace;
+            font-size: 50px;
+        }
+        .stopwatch{
+            padding: 30px;
+            width: 400px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+            border-radius: 30px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.456);
+        }
+        #screen{
+            font-family: monospace;
+            font-size: 50px;
+            display: inline-block;
+            width: auto;
+            padding: 10px;
+            color: rgb(58, 41, 41);
+        }
+        button{
+            font-size: 20px;
+            font-family: monospace;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 3px black solid;
+            background-color: black;
+            color: aliceblue;
+            transition: all 200ms ease;
+            margin: 10px;
+            box-shadow: 3px 3px 8px rgb(74, 72, 72);
+        }
+        #start{
+            background-color: rgb(30, 159, 30);
+        }
+        #stop{
+            background-color: rgb(223, 55, 55);
+        }
+        button:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        button:active{
+            border:none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <h1>Stop Watch</h1>
+        <div id="screen">
+            00:00:00:00
+        </div>
+        <div id="button-container">
+            <button id="start" onclick="start()">Start</button>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+   
+    <script src="another.js"></Script>
+</body>
+</html>
